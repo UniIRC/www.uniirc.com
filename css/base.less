@@ -1,0 +1,148 @@
+// Colour schema from Adobe Kuler 'Lollapalooza'
+@darkblue: #002635;
+@teal: #013440;
+@red: #AB1A25;
+@orange: #D97925;
+@cream: #EFE7BE;
+
+body,
+ .pure-g [class *= "pure-u"],
+ .pure-g-r [class *= "pure-u"] {
+  font-family: 'Alef', 'Calibri', 'Helvetica', sans-serif;
+}
+body {
+  min-width: 1280px;
+}
+
+.uniirc {
+  h1, h2, h3 {
+    font-weight: normal;
+    color: @teal;
+    margin: 0px;
+  }
+  .header {
+    border-bottom: 1px solid grey;
+    line-height: 56px;
+    height: 56px;
+    position: relative;
+    .logo {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 2.0em;
+      vertical-align: middle;
+      color: @teal;
+    }
+    .clubs {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      margin-left: -54px;
+      .club-logo {
+        line-height: 56px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 6px;
+        background-size: contain;
+        &.ucc { background-image: url(/img/logo/ucc_black_128.png); }
+        &.cassa { background-image: url(/img/logo/cassa_black_128.png); }
+        &.comssa { background-image: url(/img/logo/comssa_black_128.png); }
+      }
+    }
+    .social {
+      display: inline-block;
+      width: 48px;
+      height: 56px;
+      float: right;
+      a {
+        display: inline-block;
+        line-height: 56px;
+        vertical-align: middle;
+      }
+      .social-icon {
+        width: 48px; height: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.facebook {
+          background-image: url(/img/icon/facebook.png);
+        }
+      }
+    }
+  }
+  .content {
+    .pure-u-1-5 {
+      min-height: 512px;
+    }
+  }
+  .content > div {
+    background-image: url(/img/bg_fade.png);
+    background-position: top;
+    background-repeat: repeat-x;
+  }
+  .container {
+    padding-top: 40px;
+  }
+  .top {
+    .servers {
+      float: right;
+      background-color: white;
+      padding: 20px;
+      width: 400px;
+      border-top:2px solid @teal;
+      border-bottom:1px solid @teal;
+      .node {
+        margin: 8px 0;
+        .club-logo {
+          display: inline-block;
+          width: 32px; height: 32px;
+          margin-right: 2px;
+          background-size: contain;
+          &.ucc { background-image: url(/img/logo/ucc_black_128.png); }
+          &.cassa { background-image: url(/img/logo/cassa_black_128.png); }
+          &.comssa { background-image: url(/img/logo/comssa_black_128.png); }
+        }
+        .details {
+          display: inline-block;
+          width: 340px;
+          .initials {
+            font-weight: bold;
+            color: @darkblue;
+          }
+          .university {
+            color: @teal;
+            float: right;
+          }
+          a, a:hover, a:visited {
+            color: @red;
+          }
+          .club {
+            display: inline-block;
+            float: right;
+          }
+        }
+      }
+    }
+    .eyecatcher {
+      width: 530px;
+      .leader {
+        font-style: italic;
+        color: @teal;
+      }
+      .title {
+        h1 {
+          font-size: 2.5em;
+          text-shadow: 2px 2px 2px #ddd;
+        }
+        border-left: 3px solid @teal;
+        padding: 20px 20px;
+      }
+    }
+  }
+  .main {
+    margin-top: 60px;
+  }
+  section {
+    margin-top: 20px;
+  }
+}
